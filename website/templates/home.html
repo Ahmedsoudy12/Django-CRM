@@ -13,20 +13,20 @@
         <form method="POST" action="{% url 'home' %}">
             {% csrf_token %}
 
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="text" class="form-control" name="username" placeholder="Username" required>
-                  
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" name="password" placeholder="Password" required>
-                </div>
-                <br/>
+            
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="text" class="form-control" name="username" placeholder="Username" required>
+                
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Password" required>
+            </div>
+            <br/>
 
-                <button type="submit" class="btn btn-primary">Login</button>
-              </form>
+            <button type="submit" class="btn btn-primary">Login</button>
+            
 
         </form>
 
